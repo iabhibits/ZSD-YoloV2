@@ -1,0 +1,8 @@
+Please: 
+1. Add train_SAN.py file to the parent directory
+2. Replace previous src/yolo_net.py with this new src/yolo_net.py
+3. Place class_vecs.npy into the src folder, these are the Glove vectors for our 20 classes
+
+Usage:
+
+1. Use train_SAN.py to train the Semantic Analysis network please ensure all the parameters are correct before executing the command(parameter pre_trained_model_path in line 44 takes the pre-trained model on top of which you want to train the SAN)
