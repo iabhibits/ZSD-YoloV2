@@ -20,7 +20,7 @@ def create_adjacencyList(data):
                 A[i][j] = data[i][j]
     return A
 
-def load_data(path='./data/Similarity.csv',feature_path='./glove_feature', dataset="VOC"):
+def load_data(path='./graph_new.csv',feature_path='./glove_feature', dataset="VOC"):
     """Load citation network dataset (cora only for now)"""
     print('Loading coco_sim dataset...')
 
@@ -28,7 +28,7 @@ def load_data(path='./data/Similarity.csv',feature_path='./glove_feature', datas
     #sim = pd.read_csv('./Similarity.csv',sep='\t')
     #data = sim.as_matrix()  
     #data = data[0:,2:]
-    data = np.loadtxt("graph_new.csv",delimiter=",")
+    data = np.loadtxt(path,delimiter=",")
     features = np.loadtxt(feature_path)
 
     A = create_adjacencyList(data)
