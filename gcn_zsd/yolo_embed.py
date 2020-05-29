@@ -19,8 +19,8 @@ def get_args():
     parser.add_argument("--conf_threshold", type=float, default=0.35)
     parser.add_argument("--nms_threshold", type=float, default=0.5)
     parser.add_argument("--pre_trained_model_type", type=str, choices=["model", "params"], default="model")
-    parser.add_argument("--pre_trained_model_path", type=str, default="YoloV2/trained_models/whole_model_trained_yolo_voc")
-    parser.add_argument("--input", type=str, default="YoloV2/mydata2/1505split/seen.txt")
+    parser.add_argument("--pre_trained_model_path", type=str, default="../trained_models/whole_model_trained_yolo_voc")
+    parser.add_argument("--input", type=str, default="../mydata2/1505split/seen.txt")
     parser.add_argument("--output", type=str, default="test_images")
 
     args = parser.parse_args()
